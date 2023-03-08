@@ -17,13 +17,28 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script type="text/babel">
+    <script>
       const root = ReactDOM.createRoot(document.getElementById("root"));
 
-      const wrapper = (
-        <img src="https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg" />
+      const list1 = React.createElement("li", {
+        children: "Apel",
+      });
+
+      const list2 = React.createElement("li", {
+        children: "Mangga",
+      });
+
+      const list3 = React.createElement("li", {
+        children: "Jeruk",
+      });
+
+      const wrapper = React.createElement(
+        "ul",
+        { className: "list" },
+        list1,
+        list2,
+        list3
       );
 
       root.render(wrapper);

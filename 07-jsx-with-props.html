@@ -22,8 +22,14 @@
     <script type="text/babel">
       const root = ReactDOM.createRoot(document.getElementById("root"));
 
+      function ngegas(text) {
+        return text.toUpperCase();
+      }
+
+      const name = "Brian";
+      const className = "heading-1";
       const wrapper = (
-        <img src="https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg" />
+        <h1 className={className}>Hello my name {ngegas(name)}</h1>
       );
 
       root.render(wrapper);
