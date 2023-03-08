@@ -17,19 +17,20 @@
 
   <script type="text/babel">
     const root = ReactDOM.createRoot(document.getElementById("root"));
-    function tick() {
-      const wrapper = (
-        <div>
-          <h1>Jam Sekarang</h1>
-          <h2>{new Date().toLocaleTimeString()}</h2>
-        </div>
-      )
-      root.render(wrapper);
+
+    function halo(name) {
+      return <p>Halo <b>{name}</b></p>
     }
-    tick()
-    setInterval(function () {
-      tick();
-    }, 1000)
+
+    const wrapper = (
+      <>
+        {halo("Muhammad")}
+        {halo("Brian")}
+        {halo("Ivan")}
+      </>
+    );
+
+    root.render(wrapper);
   </script>
 </body>
 
