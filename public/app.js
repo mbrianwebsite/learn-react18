@@ -1,14 +1,10 @@
 const root = ReactDOM.createRoot(document.getElementById("root"));
 function box() {
-  const className = "rounded";
-  const wrapper = /*#__PURE__*/React.createElement("div", {
-    className: className,
-    style: {
-      width: 200,
-      height: 200,
-      backgroundColor: "blue"
+  const wrapper = /*#__PURE__*/React.createElement("button", {
+    onClick: function () {
+      alert(1);
     }
-  });
+  }, "Click Me");
   root.render(wrapper);
 }
 box();
