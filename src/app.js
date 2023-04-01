@@ -4,13 +4,7 @@ function box() {
     alert(arg);
   }
   const wrapper = (
-    <button
-      onClick={function () {
-        whenClicked("Di Klik");
-      }}
-    >
-      Click Me
-    </button>
+    <button onClick={whenClicked.bind(this, "Di Klik")}>Click Me</button>
   );
   root.render(wrapper);
 }
