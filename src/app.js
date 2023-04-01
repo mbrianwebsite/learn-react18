@@ -1,9 +1,17 @@
 const root = ReactDOM.createRoot(document.getElementById("root"));
 function box() {
-  function whenClicked() {
-    alert(1);
+  function whenClicked(arg) {
+    alert(arg);
   }
-  const wrapper = <button onClick={whenClicked()}>Click Me</button>;
+  const wrapper = (
+    <button
+      onClick={function () {
+        whenClicked("Di Klik");
+      }}
+    >
+      Click Me
+    </button>
+  );
   root.render(wrapper);
 }
 box();
