@@ -3,7 +3,7 @@ function box() {
   function whenClicked() {
     alert(1);
   }
-  const wrapper = <button onClick={whenClicked}>Click Me</button>;
+  const wrapper = <button onClick={whenClicked()}>Click Me</button>;
   root.render(wrapper);
 }
 box();

@@ -4,7 +4,7 @@ function box() {
     alert(1);
   }
   const wrapper = /*#__PURE__*/React.createElement("button", {
-    onClick: whenClicked
+    onClick: whenClicked()
   }, "Click Me");
   root.render(wrapper);
 }
