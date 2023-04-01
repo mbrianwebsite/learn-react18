@@ -1,8 +1,9 @@
 const root = ReactDOM.createRoot(document.getElementById("root"));
-function tick() {
+function box() {
+  const className = "rounded";
   const wrapper = (
     <div
-      className="rounded"
+      className={className}
       style={{
         width: 200,
         height: 200,
@@ -12,4 +13,4 @@ function tick() {
   );
   root.render(wrapper);
 }
-tick();
+box();
