@@ -1,14 +1,14 @@
 const root = ReactDOM.createRoot(document.getElementById("root"));
 function tick() {
   const wrapper = (
-    <div>
-      <h1>Jam Sekarang</h1>
-      <h2>{new Date().toLocaleTimeString()}</h2>
-    </div>
+    <div
+      style={{
+        width: 200,
+        height: 200,
+        backgroundColor: "blue",
+      }}
+    ></div>
   );
   root.render(wrapper);
 }
 tick();
-setInterval(function () {
-  tick();
-}, 1000);
