@@ -1,9 +1,6 @@
 const root = ReactDOM.createRoot(document.getElementById("root"));
 function App() {
-  const state = React.useState(0);
-
-  const count = state[0];
-  const setCount = state[1];
+  const [count, setCount] = React.useState(0);
   return (
     <>
       <button
