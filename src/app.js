@@ -1,23 +1,11 @@
 const root = ReactDOM.createRoot(document.getElementById("root"));
 function App() {
-  const [count, setCount] = React.useState(0);
+  React.useEffect(() => {
+    console.log(document.getElementById("judul"));
+  });
   return (
     <>
-      <button
-        onClick={function () {
-          setCount(count - 1);
-        }}
-      >
-        -
-      </button>
-      <span>{count}</span>
-      <button
-        onClick={function () {
-          setCount(count + 1);
-        }}
-      >
-        -
-      </button>
+      <h1 id="judul">Halo</h1>
     </>
   );
 }
